@@ -2,14 +2,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css">
     <title>CSV Report Generator</title>
   </head>
   <body>
-    <form action="/upload_json" method="POST">
+    <form id='form' action="/upload_json" method="POST">
       <label for="filetext">Paste in data</label><br>
-      <textarea id="filetext"><br>
+      <textarea id='text' style='width:600px;height:200px' name='text'></textarea><br>
       <input type="submit" value="Submit">
     </form>
+    <div id="data">Result goes here</div>
     <script src="app.js"></script>
   </body>
 </html>
